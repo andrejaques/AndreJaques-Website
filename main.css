@@ -1,10 +1,12 @@
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin: 0;
     padding: 0;
 }
 
 .body {
+    height: 100vh;
+    width: 100vw;
     background-color: black;
     display: grid;
     grid-template-columns: 7vw 93vw; 
@@ -18,7 +20,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 15% 85%;
-    grid-area: 1 / 1 / span 3 / 2
+    grid-area: 1 / 1 / 4 / 2
 }
 
     .G1A {
@@ -28,6 +30,7 @@
     .G1B {
         grid-area: 2 / 1 / 3 / 2;
     }
+
 
 .G2 { /*---------------------------------------------------header---------------------------------------------------*/
     display: grid;
@@ -56,33 +59,29 @@
 
     .G2B {
         display: flex;        
-        justify-content: right;
-        align-items: center; 
-        padding-right: 10vw;
+        justify-content: flex-end;
+        align-items: center;
         grid-area: 1 / 2 / 2 / 3;
     }
 
         .menu ul {
             display: flex;
-            justify-content: right;
-            align-items: center; 
+            justify-content: space-around;
+            align-items: baseline; 
 
         }
 
         .menu li {
             display: flex;
+            padding: 3vw;
         }
 
         .menu a {
-            position: relative;
-            overflow: visible;
-            width: 192px;
-            white-space: nowrap;
             text-align: left;
-            font-family: Miriam Libre;
+            font-family: 'Miriam Libre', sans-serif;
             font-style: normal;
             font-weight: bold;
-            font-size: 22px;
+            font-size: 1vw;
             color: rgba(177,177,177,1);
             letter-spacing: 1px;
         }
@@ -94,14 +93,15 @@
         .email {
             white-space: nowrap;
             text-align: left;
-            font-family: 'Miriam Libre';
+            font-family: 'Miriam Libre', sans-serif;
             font-style: normal;
             font-weight: bold;
-            font-size: 22px;
+            font-size: 1vw;
             color: rgba(237,216,65,0.749);
             letter-spacing: 1px;
             text-transform: uppercase;
         }
+
 
 .G3 { /*-------------------------------------------------mobiHeader-------------------------------------------------*/
     display: grid;
@@ -122,13 +122,12 @@
         display: flex;        
         justify-content: center;
         align-items: center;
+        text-align: left;
         font-family: 'Miriam Libre', sans-serif;
         white-space: nowrap;
-        text-align: left;
-        font-family: Miriam Libre;
         font-style: normal;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 2vw;
         color: rgba(177,177,177,1);
         letter-spacing: 1px;
         grid-area: 1 / 2 / 2 / 3;
@@ -137,6 +136,7 @@
     .G3C {
         grid-area: 1 / 3 / 2 / 4;
     }
+
 
 .G4 { /*---------------------------------------------------main-----------------------------------------------------*/
     display: grid;
@@ -157,7 +157,7 @@
             text-align: left;
             font-style: normal;
             font-weight: lighter;
-            font-size: 12em;
+            font-size: 8vw;
             color: rgba(217,217,217,1);
             letter-spacing: 0.2px;
             line-height: 1.0;
@@ -166,34 +166,71 @@
 
     .G4B {
         display: flex;
-        justify-content: left;
-        align-items: top;
+        justify-content: center;
+        align-items: center;
         grid-area: 1 / 2 / 3 / 3;
     }
 
-        .imageAndre {
-            padding-left: 5vw;
+        .divAndre {
+            padding-bottom: 20vw;
         }
 
             .G4B img {
-                height: 70%;
-                margin: auto;
-                margin-left: auto;
-                margin-right: auto;
+                height: 30vw;
+                max-height: 422px;
             }
 
     .G4C {
+        display: flex;
         grid-area: 2 / 1 / 3 / 3;
     }
 
+            .G4C img {
+                width: 40%;
+                max-width: 550px;
+                min-width: 315px;
+                max-height: 130px;
+            }
+
+
 .G5 { /*--------------------------------------------------footer----------------------------------------------------*/
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: center;
     grid-area: 3 / 2 / 4 / 3;
 
 }
 
     .miniText {
+        font-size: 1vw;
         color: rgba(217,217,217,1);
         margin-right: 3vw;
     }
+
+
+
+/*---------------------------------------------------- @ Media Queries ---------------------------------------------*/
+
+@media (max-width: 1200px) {
+    .menu a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .email {
+        font-size: 10.5px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .miniText {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .miniText {
+        font-size: 10px;
+    }
+}
