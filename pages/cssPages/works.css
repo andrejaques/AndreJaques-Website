@@ -1,0 +1,66 @@
+body, html {
+    height: 100%
+}
+
+body {
+    margin: 0;
+}
+  
+  /* background img */
+.bgimg {
+    background-image: url('../imagesPages/background02.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    font-weight: bolder;
+    position: relative;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+  
+  /* Position text - top-left corner */
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    margin: 10px;
+}
+
+.topleft a{
+    text-decoration: none;
+    color: white;
+}
+
+.topleft p {
+      color: white;
+}
+  
+  /* Position text - bottom-left corner */
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    color: white;
+}
+  
+  /* Position text - middle */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+  /* <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+.topleft:hover {
+    background-color: black;
+    border-radius: 20px;
+    font-size: 125%;
+}
