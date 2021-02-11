@@ -251,6 +251,8 @@
             .G4B img {
                 height: 30vw;
                 max-height: 422px;
+                border-radius: 60px;
+
             }
 
     .G4C {
