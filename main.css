@@ -20,11 +20,11 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 15% 85%;
-    grid-area: 1 / 1 / 4 / 2
+    grid-area: 1 / 1 / 4 / 2;
 }
 
     .G1A {
-      grid-area: 1 / 1 / 2 / 2; 
+        grid-area: 1 / 1 / 2 / 2; 
     }
 
     .G1B {
@@ -82,16 +82,16 @@
                 padding: 3vw;
             }
 
-            .menu a {
-                text-decoration: none;
-                text-align: left;
-                font-family: 'Miriam Libre', sans-serif;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 1vw;
-                color: rgba(177,177,177,1);
-                letter-spacing: 1px;
-            }
+                .menu a {
+                    text-decoration: none;
+                    text-align: left;
+                    font-family: 'Miriam Libre', sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1vw;
+                    color: rgba(177,177,177,1);
+                    letter-spacing: 1px;
+                }
 
         .email {
             white-space: nowrap;
@@ -147,7 +147,7 @@
     }
 
 /* sanduich Icon config animation */
-    .sanduichIcon {
+    .sanduich-icon {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -244,7 +244,7 @@
         grid-area: 1 / 2 / 3 / 3;
     }
 
-        .divAndre {
+        .div-andre {
             padding-bottom: min(200px, 20vw);
         }
 
@@ -285,7 +285,7 @@
         min-height: 55px;
     }
 
-    .miniText {
+    .mini-text {
         font-size: 1vw;
         color: rgba(217,217,217,1);
         margin-right: 3vw;
@@ -320,13 +320,13 @@
 
 /* Media Queries footer */
 @media (min-width: 1400px) {
-    .miniText {
+    .mini-text {
         font-size: 14px;
     }
 }
 
 @media (max-width: 1000px) {
-    .miniText {
+    .mini-text {
         font-size: 10px;
     }
 }
@@ -364,7 +364,7 @@
             padding-bottom: 10vh;
         }
 
-            .divAndre {
+            .div-andre {
                 padding: min(150px, 20vw);
             }
 
@@ -383,7 +383,7 @@
         min-width: 75px;
     }
 
-        .miniText {
+        .mini-text {
             font-size: 1.2vh;
         }
 }
