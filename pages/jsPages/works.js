@@ -1,5 +1,5 @@
 // Launch date
-var countDownDate = new Date("Feb 1, 2021 00:00:00").getTime();
+var countDownDate = new Date("March 1, 2021 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
