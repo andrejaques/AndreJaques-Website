@@ -1,35 +1,29 @@
-const sandubaSideMenu = document.querySelector('.G1Z');
-const sandubaMobMenu = document.querySelector('.G3Z');
-let checkBox1 = document.querySelector('#checkbox-menu1:checked');
-let checkBox2 = document.querySelector('#checkbox-menu2:checked');
-
 //Sanduich Icon Menu Side Bar (G1Z)
+
+
 function menuSideFunction()
 {
-    console.log(checkBox1)
-}
-/*     if (checkBox1 = true)
+    if (document.getElementById('sandA').style.display !== "flex")
     {
-        sandubaSideMenu.style.display = "flex";
+        document.getElementById('sandA').style.display = "flex";
+        
     }
     else
     {
-        sandubaSideMenu.style.display = "none";
+        document.getElementById('sandA').style.display = "none";
     }
 }
 
 //Sanduich Icon Menu Top Bar (G3Z)
-function menuMobFunction()
+/* function menuMobFunction()
 {
-
-    if (checkBox2.checked = true)
+    let x =  document.getElementsByClassName("G3C")
+    if (x.style.display !== "none")
     {
-        sandubaMobMenu.display = "flex";
+        x.style.display = "none";
     }
     else
     {
-        sandubaMobMenu.display = "none";
+        x.style.display = "flex";
     }
 } */
-
-// refazer com o add event listener
