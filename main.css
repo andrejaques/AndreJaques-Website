@@ -1,10 +1,12 @@
-* {
+* 
+{
     box-sizing: content-box;
     margin: 0;
     padding: 0;
 }
 
-.body {
+.body 
+{
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -15,7 +17,8 @@
 
 
 
-.G1 { /*-------------------------------------------------asideMenu--------------------------------------------------*/
+.G1  /*-------------------------------------------------asideMenu--------------------------------------------------*/
+{
     background-color: #40403e;
     display: grid;
     grid-template-columns: 100%;
@@ -23,11 +26,13 @@
     grid-area: 1 / 1 / 4 / 2;
 }
 
-    .G1A {
+    .G1A 
+    {
         grid-area: 1 / 1 / 2 / 2; 
     }
 
-    .G1B {
+    .G1B 
+    {
         display: flex;
         flex-direction: column;
         grid-area: 2 / 1 / 3 / 2;
@@ -35,14 +40,16 @@
         align-items: center;
     }
 
-        .G1B img {
+        .G1B img 
+        {
             height: 3.5vh;
             width: 40%;
             padding: 2vh; 
         }
 
 
-.G2 { /*---------------------------------------------------header---------------------------------------------------*/
+.G2  /*---------------------------------------------------header---------------------------------------------------*/
+{
     display: grid;
     background-color: black;
     grid-template-columns: 15% 85%;
@@ -50,7 +57,8 @@
     grid-area: 1 / 2 / 2 / 3;
 }
 
-    .G2A {
+    .G2A 
+    {
         display: flex;        
         justify-content: center;
         align-items: bottom;
@@ -59,30 +67,35 @@
         grid-area: 1 / 1 / 2 / 2;
     }
 
-        .G2A img {
+        .G2A img 
+        {
             display: flex;
         }
 
-    .G2B {
+    .G2B 
+    {
         display: flex;        
         justify-content: flex-end;
         align-items: center;
         grid-area: 1 / 2 / 2 / 3;
     }
 
-        .menu ul {
+        .menu ul 
+        {
             display: flex;
             justify-content: space-around;
             align-items: baseline; 
 
         }
 
-            .menu li {
+            .menu li 
+            {
                 display: flex;
                 padding: 3vw;
             }
 
-                .menu a {
+                .menu a 
+                {
                     text-decoration: none;
                     text-align: left;
                     font-family: 'Miriam Libre', sans-serif;
@@ -93,7 +106,8 @@
                     letter-spacing: 1px;
                 }
 
-        .email {
+        .email 
+        {
             white-space: nowrap;
             text-align: left;
             font-family: 'Miriam Libre', sans-serif;
@@ -106,14 +120,16 @@
         }
 
 
-.G3 { /*-------------------------------------------------mobiHeader-------------------------------------------------*/
+.G3  /*-------------------------------------------------mobiHeader-------------------------------------------------*/
+{
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 100%;
     grid-area: 1 / 2 / 2 / 3;
 }
 
-    .G3A {
+    .G3A 
+    {
         display: flex;        
         justify-content: center;
         align-items: center;
@@ -122,14 +138,16 @@
         grid-area: 1 / 1 / 2 / 2;
     }
 
-    .G3B {
+    .G3B 
+    {
         display: flex;        
         justify-content: center;
         align-items: center;
         grid-area: 1 / 2 / 2 / 3;
     }
 
-        .G3B p {
+        .G3B p 
+        {
             font-family: 'Miriam Libre', sans-serif;
             font-style: normal;
             font-weight: bold;
@@ -139,27 +157,32 @@
             text-shadow: 0px 0px 30px rgb(250, 248, 248);
         }
 
-    .G3C {
+    .G3C 
+    {
         display: flex;
         align-items: center;
         justify-content: center;
         grid-area: 1 / 3 / 2 / 4;
     }
 
-/* sanduich Icon config animation */
-    .sanduich-icon {
+/* --- sanduich Icon config animation --- */
+    .sanduich-icon 
+    {
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 20;
     }
 
     #checkbox-menu1, 
-    #checkbox-menu2 {
+    #checkbox-menu2 
+    {
         position: absolute;
         opacity: 0;
     }
 
-        label{
+        label
+        {
             cursor: pointer;
             position: relative;
             display: block;
@@ -167,7 +190,8 @@
             width: 22px;
         }
         
-            label span{
+            label span
+            {
                 position: absolute;
                 display: block;
                 height: 5px;
@@ -177,55 +201,65 @@
                 transition: 0.5s ease-in-out;
             }
 
-            .G1 label span{
+            .G1 label span
+            {
                 background: rgb(214, 214, 214);
             }
             
-                label span:nth-child(1){
+                label span:nth-child(1)
+                {
                     top: 0;
                 }
                 
-                label span:nth-child(2){
+                label span:nth-child(2)
+                {
                     top: 8px;
                 }
                 
-                label span:nth-child(3){
+                label span:nth-child(3)
+                {
                     top: 16px;
                 }
                 
         #checkbox-menu1:checked + label span:nth-child(1),
-        #checkbox-menu2:checked + label span:nth-child(1){
+        #checkbox-menu2:checked + label span:nth-child(1)
+        {
             transform: rotate(135deg);
             top: 8px;
         }
         
         #checkbox-menu1:checked + label span:nth-child(2), 
-        #checkbox-menu2:checked + label span:nth-child(2){
+        #checkbox-menu2:checked + label span:nth-child(2)
+        {
             transform: rotate(45deg);
             top: 8px;
         }
         
         #checkbox-menu1:checked + label span:nth-child(3),
-        #checkbox-menu2:checked + label span:nth-child(3){
+        #checkbox-menu2:checked + label span:nth-child(3)
+        {
             transform: rotate(135deg);
             top:8px;
         } 
 
-.G4 { /*---------------------------------------------------main-----------------------------------------------------*/
+.G4  /*---------------------------------------------------main-----------------------------------------------------*/
+{
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 80% 20%;
     grid-area: 2 / 2 / 3 / 3
 }
 
-    .G4A {
+    .G4A 
+    {
         display: flex;
         justify-content: center;
         align-items: center;
         grid-area: 1 / 1 / 2 / 2;
     }
 
-        .G4A p {
+        .G4A p 
+        {
             font-family: 'Hind Madurai', sans-serif;
             text-align: left;
             font-style: normal;
@@ -237,30 +271,35 @@
             text-transform: capitalize;
         }
 
-    .G4B {
+    .G4B 
+    {
         display: flex;
         justify-content: center;
         align-items: center;
         grid-area: 1 / 2 / 3 / 3;
     }
 
-        .div-andre {
+        .div-andre 
+        {
             padding-bottom: min(200px, 20vw);
         }
 
-            .G4B img {
+            .G4B img 
+            {
                 height: 30vw;
                 max-height: 422px;
                 border-radius: 60px;
 
             }
 
-    .G4C {
+    .G4C 
+    {
         display: flex;
         grid-area: 2 / 1 / 3 / 3;
     }
 
-            .G4C img {
+            .G4C img 
+            {
                 width: 40%;
                 height: 100%;
                 max-width: 550px;
@@ -269,14 +308,16 @@
             }
 
 
-.G5 { /*--------------------------------------------------footer----------------------------------------------------*/
+.G5  /*--------------------------------------------------footer----------------------------------------------------*/
+{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     grid-area: 3 / 2 / 4 / 3;
 }
 
-    .G5 img {
+    .G5 img 
+    {
         width: 10vw;
         height: 10vh;
         max-width: 150px;
@@ -285,7 +326,8 @@
         min-height: 55px;
     }
 
-    .mini-text {
+    .mini-text 
+    {
         font-size: 1vw;
         color: rgba(217,217,217,1);
         margin-right: 3vw;
@@ -294,39 +336,51 @@
 
 /*------------------------------------------------ @ Media Queries General -----------------------------------------*/
 
-@media (min-width: 500px) and (max-width: 1000px) {
-    .logo img {
+@media (min-width: 500px) and (max-width: 1000px) 
+{
+    .logo img 
+    {
         width: 80px;
     }
 }
 
-@media (max-width: 500px) {
-    .logo img {
+@media (max-width: 500px) 
+{
+    .logo img 
+    {
         width: 40px;
     }
 }
 
-@media (max-width: 1200px) {
-    .menu a {
+@media (max-width: 1200px) 
+{
+    .menu a 
+    {
         font-size: 12px;
     }
 }
 
-@media (max-width: 1050px) {
-    .email {
+@media (max-width: 1050px) 
+{
+    .email 
+    {
         font-size: 10.5px;
     }
 }
 
 /* Media Queries footer */
-@media (min-width: 1400px) {
-    .mini-text {
+@media (min-width: 1400px) 
+{
+    .mini-text 
+    {
         font-size: 14px;
     }
 }
 
-@media (max-width: 1000px) {
-    .mini-text {
+@media (max-width: 1000px) 
+{
+    .mini-text 
+    {
         font-size: 10px;
     }
 }
@@ -334,8 +388,10 @@
 /*------------------------------------------------- @ Media Queries Landscape ---------------------------------------*/
 
 /* Media Queries Header */
-@media (orientation: landscape) {
-    .G3 {
+@media (orientation: landscape) 
+{
+    .G3 
+    {
         display: none;
     }
 }
@@ -345,47 +401,126 @@
 /*-------------------------------------------------@ Media Queries Portrait ----------------------------------------*/
 
 /* Media Queries Header */
-@media (orientation: portrait) {
+@media (orientation: portrait) 
+{
 
-    .body {
+    .body 
+    {
         grid-template-columns: 0% 100% 0%;
     }
 
-    .G1, .G2 {
+    .G1, .G2 
+    {
         display: none;
     }
 
-    .G4 {
+    .G4 
+    {
         grid-template-columns: 100%;
     }
 
-        .G4B {
+        .G4B 
+        {
             grid-area: 2 / 1 / 3 / 2;
             padding-bottom: 10vh;
         }
 
-            .div-andre {
+            .div-andre 
+            {
                 padding: min(150px, 20vw);
             }
 
-            .G4B img {
+            .G4B img 
+            {
                 max-height: 230px;
             }
 
-        .G4C {
+        .G4C 
+        {
             display: none;
         }
 
-    .G5 img {
+    .G5 img 
+    {
         height: 8vh;
         width: 14vw;
         max-width: 130px;
         min-width: 75px;
     }
 
-        .mini-text {
+        .mini-text 
+        {
             font-size: 1.2vh;
         }
 }
 
 /* ---------------------------------------------------------------------------------------*/
+
+/* saduich menu bar and G1Z expecs */
+
+.G1Z, .G3Z 
+{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.3vw solid rgba(217,217,217,1);
+    margin-bottom: 99vh;
+    grid-area: 1 / 1 / 3 / 2;
+    z-index: 10;
+    transition: display 1s ease-in 0, margin-bottom 1s ease-in 1s;
+}
+
+    .G1Z ul, .G3Z ul 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .G1Z li, .G3Z li
+        {
+            list-style: none;
+            padding: 5vh 0;
+        }
+
+            .G1Z a, .G3Z a
+            {
+                color: rgba(217,217,217,1);
+                text-decoration: none;
+                font-size: 1vw;
+                margin: 10px 0;
+                font-weight: 300;
+                letter-spacing: 0.2vw;
+                text-transform: uppercase;
+            }
+
+                .G1Z a:hover
+                {
+                    color: rgb(228, 203, 19);
+                }
+
+
+/* --- saduich menu bar to G3Z --- */
+
+.G3Z 
+{
+    height: 99vh;
+    width: 99vw;
+    margin-bottom: 0;
+    background-color: black;
+    border: 10px solid rgba(217,217,217,1);
+}
+
+    .G3Z a 
+    {
+        color: rgba(237,216,65,0.749);
+        font-size: 2vh;
+        letter-spacing: 0.3vh;
+    }
+
+    .G3Z a:hover
+    {
+        color: rgba(217,217,217,1);
+    }
