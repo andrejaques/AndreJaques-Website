@@ -15,15 +15,17 @@ function menuSideFunction()
 }
 
 //Sanduich Icon Menu Top Bar (G3Z)
-/* function menuMobFunction()
+function menuMobFunction()
 {
-    let x =  document.getElementsByClassName("G3C")
-    if (x.style.display !== "none")
+    if (document.getElementById('sandB').style.display !== "flex")
     {
-        x.style.display = "none";
+        document.getElementById('sandB').style.display = "flex";
+        document.getElementById('sandB').style.height = "100vh";
+        
     }
     else
     {
-        x.style.display = "flex";
+        document.getElementById('sandB').style.display = "none";
+        document.getElementById('sandB').style.height = "0vh";
     }
-} */
+}

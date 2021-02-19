@@ -512,11 +512,11 @@
 .G3Z 
 {
     display: none;
-    height: 99vh;
-    width: 99vw;
+    height: 0vh;
+    width: 100vw;
     margin-bottom: 0;
     background-color: black;
-    border: 10px solid rgba(217,217,217,1);
+    border: none;
 }
 
     .G3Z a 
@@ -524,6 +524,7 @@
         color: rgba(237,216,65,0.749);
         font-size: 2vh;
         letter-spacing: 0.3vh;
+        transition: all ease-in 0.5s;
     }
 
     .G3Z a:hover
