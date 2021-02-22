@@ -6,3 +6,11 @@ which can be redoing the project or just adding new pages.
 the link to site is: https://andrejaques.github.io/AndreJaques-Website/
 
 I hope you enjoy ^^.
+
+WebSite Preview:
+
+<img src="images/websitePreview/websitepre.png">
+
+WebSite Mobile Version Preview:
+
+<img src="images/websitePreview/websiteMob.png">
