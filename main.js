@@ -1,6 +1,6 @@
+/* -------------------------MAIN SCCRIPTS ---------------- */
+
 //Sanduich Icon Menu Side Bar (G1Z)
-
-
 function menuSideFunction()
 {
     if (document.getElementById('sandA').style.display !== "flex")
